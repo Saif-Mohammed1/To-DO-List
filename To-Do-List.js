@@ -172,6 +172,9 @@ function addElementToPageForm(ArrayToTask) {
     background-color: white;
     align-items: center;
     padding: 6px;
+        margin-bottom: 10px;
+
+
 `;
     pra.style.cssText = `
     overflow-wrap: anywhere;
