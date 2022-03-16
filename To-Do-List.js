@@ -172,10 +172,7 @@ function addElementToPageForm(ArrayToTask) {
     background-color: white;
     align-items: center;
     padding: 6px;
-        margin-bottom: 10px;
-
-
-`;
+    margin-bottom: 10px;`;
     pra.style.cssText = `
     overflow-wrap: anywhere;
     padding-left:10px;
@@ -189,7 +186,8 @@ function addElementToPageForm(ArrayToTask) {
     margin: 5px;
     padding: 6px;
     border-radius: 6px;
-            flex-basis: 10%;
+            flex-basis: 10%;    text-align: center;
+
 `;
   });
 }
