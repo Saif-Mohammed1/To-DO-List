@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-   <style>
-      :root {
-        --main-color: #007bff;
-      }
-      ul {
-        list-style: none;
-        display: flex;
-        justify-content: end;
-        margin-bottom: 20px;
-      }
-      ul li {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        cursor: pointer;
-        margin-left: 10px;
-        opacity: 0.5;
-      }
-      .active {
-        opacity: 1;
-      }
-      .container h1 {
-        text-shadow: 3px 3px 20px var(--main-color),
-          -2px 1px 30px var(--main-color);
-      }
-    </style>
-</head>
-<body>
-    <div class="container">
-      <h1>To-Do List</h1>
-      <ul>
-        <li data-color="red"></li>
-        <li data-color="green"></li>
-        <li data-color="blue"></li>
-        <li data-color="black"></li>
-      </ul>
-      <div class="form">
-        <input type="text" class="input" />
-        <input type="submit" class="add" value="Add Task" />
-      </div>
-      <div class="tasks"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <div class="color-theme">
+      <h2>To-DO-LIST</h2>
     </div>
-<script src="./To-Do-List.js"></script>
+    <div class="to-do-container">
+      <form class="added-task">
+        <input
+          class="text"
+          type="text"
+          placeholder="Write Your message here?"
+        />
+        <span class="plus">+</span>
+      </form>
+      <div class="tasks-content">
+        <span class="no-tasks-message">No Tasks To Show</span>
+      </div>
+    </div>
+    <div class="task-status">
+      <div class="tasks-count">Tasks <span>0</span></div>
+      <div class="tasks-clear">Clear All <span>0</span></div>
+      <div class="tasks-completed">Completed <span>0</span></div>
+    </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
