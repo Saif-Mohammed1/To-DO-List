@@ -21,7 +21,7 @@ body {
   .task-status {
     width: 90%;
     flex-wrap: wrap;
-    margin: 10px auto;
+    margin: 30px auto;
   }
   .color-theme h2 {
     margin-bottom: 10px;
